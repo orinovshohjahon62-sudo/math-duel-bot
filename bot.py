@@ -1,3 +1,4 @@
+import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
 from telegram.ext import Application, CommandHandler, ContextTypes
 import os
@@ -34,4 +35,4 @@ app = Application.builder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 
 print("Bot ishga tushdi...")
-app.run_polling()
+asyncio.run(app.run_polling())
