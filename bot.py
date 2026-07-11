@@ -7,12 +7,12 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 TOKEN = os.getenv("BOT_TOKEN") or os.getenv("TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    # To'g'rilangan havola: MATH-DUELgame/ oxiri kichik harflarda va keshni tozalash uchun ?v=1 qo'shildi
     keyboard = [
         [
             InlineKeyboardButton(
                 "🚀 O'YINNI BOSHLASH",
-                web_app=WebAppInfo(url="https://orinovshohjahon62-sudo.github.io/MATH-DUELgame/"
-                                  )
+                web_app=WebAppInfo(url="https://orinovshohjahon62-sudo.github.io/MATH-DUELgame/?v=1")
             )
         ]
     ]
@@ -22,7 +22,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "👋 <b>MATH DUEL 1VS1</b> ga xush kelibsiz!\n\n"
         "Matematik tezlik va mantiqingizni sinovdan o'tkazing.\n"
-        "⚔️ Do'stlaringiz bilan 1v1 duel qiling va g'alaba qozoning!"
+        "⚔️ Do'stolaringiz bilan 1v1 duel qiling va g'alaba qozoning!"
     )
     
     await update.message.reply_text(
@@ -52,4 +52,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+    
