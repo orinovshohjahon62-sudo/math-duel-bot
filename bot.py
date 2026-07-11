@@ -11,7 +11,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [
             InlineKeyboardButton(
                 "🚀 O'YINNI BOSHLASH",
-                web_app=WebAppInfo(url="https://orinovshohjahon62-sudo.github.io/MATH-DUELGame/")
+                web_app=WebAppInfo(url="https://orinovshohjahon62-sudo.github.io/MATH-DUELgame/"
+                                  )
             )
         ]
     ]
